@@ -35,20 +35,20 @@ description: Create AWS CodePipeline with Multiple Environments Dev and Staging
 ```
 ### Step-02-02: Create file named `dev.conf`
 ```t
-bucket = "terraform-on-aws-for-ec2"
+bucket = "terraform-on-aws-for-ec2-toantruyen"
 key    = "iacdevops/dev/terraform.tfstate"
 region = "ap-southeast-2" 
 dynamodb_table = "iacdevops-dev-tfstate" 
 ```
 ### Step-02-03: Create file named `stag.conf`
 ```t
-bucket = "terraform-on-aws-for-ec2"
+bucket = "terraform-on-aws-for-ec2-toantruyen"
 key    = "iacdevops/stag/terraform.tfstate"
 region = "ap-southeast-2" 
 dynamodb_table = "iacdevops-stag-tfstate" 
 ```
 ### Step-02-04: Create S3 Bucket related folders for both environments for Terraform State Storage
-- Go to Services -> S3 -> terraform-on-aws-for-ec2
+- Go to Services -> S3 -> terraform-on-aws-for-ec2-toantruyen
 - Create Folder `iacdevops`
 - Create Folder `iacdevops\dev`
 - Create Folder `iacdevops\stag`
